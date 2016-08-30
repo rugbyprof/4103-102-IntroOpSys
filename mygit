@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+
+from subprocess import call
+import sys
+import os 
+
+if __name__ == "__main__":
+
+    if len(sys.argv) < 2:
+         print 'Usage: mygit branchname "comment" \n Example: mygit web "first commit"'
+         sys.exit(0)
+
+    # Get the directory of the folder your in.
+    dir = os.getcwd()
+
+    #comment should be first (and only) argument
+    comment = sys.argv[1]
+
+    print("git pull")
+    call(["git" , "-C" , dir , "pull"])
+    print("git add -A")
+    call(["git" , "-C", dir , "add" , "-A"])
+    print("git commit -m \"%s\"" % (comment))
+    call(["git" , "-C", dir, "commit", "-m", comment])
+    print("git push origin master")
+    call(["git" , "-C", dir, "push" , "origin" , "master"]) 
+    #call(["git" , "push" ,alias , "+master:refs/heads/master"]);
