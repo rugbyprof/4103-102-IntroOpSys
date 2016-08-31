@@ -2,7 +2,7 @@
 CMPS 4103 - Introduction to Operating Systems
 
 ## Roster
-![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1AQE5b4RNq93JC97D2d-xDs0QoE3dmYzqJVzct2YZdok/edit?usp=sharing)
+![](https://d3vv6lp55qjaqc.cloudfront.net/items/220B0V0H3c041K2p251Z/google-sheets-16.png?X-CloudApp-Visitor-Id=1094421) [Class Roster](https://docs.google.com/spreadsheets/d/1AqdWI7sdDD9Vw6IFp_5Fhw0zB8N0duajwkSQ-epix5k/edit?usp=sharing)
 
 - Days: TTh 3:30 p.m. 4:50 p.m. 
 - Location: BO 213 
