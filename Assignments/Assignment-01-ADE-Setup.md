@@ -236,6 +236,7 @@ This will cost you around $5.00 + tax for the entire month.
 - Now we need to edit the `sudoers` file. `Sudoers` is a file that allows regular users to run commands as "root" as long as an entry is placed correctly in the file. 
 - "Your-new-user" and "griffin" both need to be added:
     - A comprehensive tutorial about sudoers is available [Here](https://help.ubuntu.com/community/Sudoers).
+    - Or [here](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-on-ubuntu-and-centos)
     - Shortcut version:
         - (As root) $ nano /etc/sudoers
         - Edit sudoers and add two lines using the following example:
