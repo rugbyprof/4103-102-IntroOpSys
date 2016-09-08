@@ -111,24 +111,28 @@ You can get your work done however you want as long as your scripts end up:
 
 ### Script 1
 
-- Create a script called `command_args.sh` which will read in all command line arguments and print them out.
-- For example `$ ./command_args.sh arg1 "hello" 44` would print out:
+- Create a script called `sum_args.sh` which will read in all command line arguments and print out the sum of all arguments.
+- No error checking necessary.
+- Assume each argument will be integers.
+- Assume number of arguments <= 9
 
 ```
-command_args.sh
-(contents of arg1)
-hello
-44
+# Example 
+./sum_args.sh 2 4 5 6 8 9
+
+2+4+5+6+8+9=34
 ```
-
-
 
 ### Script 2
 
-
 - Create a script which will print a random word. There is a file containing a list of words on your system (usually /usr/share/dict/words or /usr/dict/words). Hint: Piping will be useful here.
 - Name this script: `myrandom.sh` and when run, should print out 1 random word to std out.
+```
+# Example 
+./myrandom.sh 
 
+Random Word: micranthropos
+```
 
 ### Script 3 
 
