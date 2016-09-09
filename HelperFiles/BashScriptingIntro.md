@@ -667,6 +667,25 @@ b=4953
 echo ${#b} # 4
 ```
 
+
+## Summary
+
+- `let expression`: Make a variable equal to an expression.
+- `expr expression`: print out the result of the expression.
+- `$(( expression ))`: Return the result of the expression.
+- `${#var}`: Return the length of the variable var.
+
+--
+
+- **Arithmetic**: There are several ways in which to do arithmetic in Bash scripts. Double parentheses is the preferred method.
+- **Formatting**: When doing arithmetic, the presence or absence of spaces (and quotes) is often important.
+
+
+===================================================================================================================
+
+# String Manipulation
+
+
 ## Sub strings
 
 `${string:position}`
@@ -708,21 +727,40 @@ echo ${string:4}
 #prints: o world
 ```
 
-## Summary
+## Some Pattern Matching
 
-- `let expression`: Make a variable equal to an expression.
-- `expr expression`: print out the result of the expression.
-- `$(( expression ))`: Return the result of the expression.
-- `${#var}`: Return the length of the variable var.
-- `${string:start:length}` : Returns substring of var.
-
---
-
-- **Arithmetic**: There are several ways in which to do arithmetic in Bash scripts. Double parentheses is the preferred method.
-- **Formatting**: When doing arithmetic, the presence or absence of spaces (and quotes) is often important.
+`${variable%pattern}`
+Trim the shortest match from the end
 
 
-===================================================================================================================
+`${variable##pattern}`
+Trim the longest match from the beginning
+
+
+`${variable%%pattern}`
+Trim the longest match from the end
+
+`${variable#pattern}`
+Trim the shortest match from the beginning
+
+```bash
+
+FILE="example.tar.gz"
+
+echo "${FILE%%.*}"
+#prints: example
+
+echo "${FILE%.*}"
+# prints: example.tar
+
+echo "${FILE#*.}"
+# prints: tar.gz
+
+echo "${FILE##*.}"
+# prints: gz
+
+```
+
 
 # Bash Scripting: If Statements
 
