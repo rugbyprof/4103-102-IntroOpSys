@@ -1139,13 +1139,7 @@ echo All done
 **Tip**
 >A common mistake is what's called an off by one error. In the example above we could have put `-lt` as opposed to `-le` (less than as opposed to less than or equal). Had we done this it would have printed up until 9. These mistakes are easy to make but also easy to fix once you've identified it so don't worry too much if you make this error.
 
-**read_file.sh**
-```bash
-#!/bin/bash
-while IFS='' read -r line || [[ -n "$line" ]]; do
-    echo "Text read from file: $line"
-done < "$1"
-```
+
 
 <script src="https://gist.github.com/rugbyprof/3609aba7aa420451a53d9f735623f557.js"></script>
 
