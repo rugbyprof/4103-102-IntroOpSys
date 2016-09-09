@@ -667,12 +667,54 @@ b=4953
 echo ${#b} # 4
 ```
 
+## Sub strings
+
+`${string:position}`
+Extracts substring from $string at $position.
+
+**substring_ex1.sh**
+
+```bash
+string="123456789"
+echo ${string:2}
+#prints: 3456789
+```
+
+
+If the $string parameter is "*" or "@", then this extracts the positional parameters, [1] starting at $position.
+
+**substring_ex2.sh**
+
+```bash
+# script called like so:
+# ./substring_ex2.sh 33 44 55 66 77 88
+echo ${@:2}
+#prints: 55 66 77 88
+
+echo ${@:2:2}
+#prints: 55 66
+```
+
+`${string:position:length}`
+
+**substring_ex3.sh**
+
+```bash
+string="hello world"
+echo ${string:4:4}
+#prints: o wo
+
+echo ${string:4}
+#prints: o world
+```
+
 ## Summary
 
 - `let expression`: Make a variable equal to an expression.
 - `expr expression`: print out the result of the expression.
 - `$(( expression ))`: Return the result of the expression.
 - `${#var}`: Return the length of the variable var.
+- `${string:start:length}` : Returns substring of var.
 
 --
 
