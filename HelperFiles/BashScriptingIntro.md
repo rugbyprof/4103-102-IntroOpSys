@@ -792,13 +792,13 @@ Let's look at a simple example:
 
 if [ $1 -gt 100 ]
 then
-    echo Hey that's a large number.
+    echo Hey that\'s a large number.
     pwd
 fi
 date
 ```
 
-- **Line 4** - Let's see if the first command line argument is greater than 100
+- **Line 4** - Let us see if the first command line argument is greater than 100
 - **Line 6 and 7** - Will only get run if the test on line 4 returns true. You can have as many commands here as you like.
 - **Line 8** - fi signals the end of the if statement. All commands after this will be run as normal.
 - **Line 10** - Because this command is outside the if statement it will be run regardless of the outcome of the if statement.
@@ -879,7 +879,7 @@ Talking of indenting. Here's a perfect example of when it makes life easier for 
 
 if [ $1 -gt 100 ]
 then
-    echo Hey that's a large number.
+    echo Hey that\'s a large number.
     
     if (( $1 % 2 == 0 ))
     then
@@ -1139,6 +1139,16 @@ echo All done
 **Tip**
 >A common mistake is what's called an off by one error. In the example above we could have put `-lt` as opposed to `-le` (less than as opposed to less than or equal). Had we done this it would have printed up until 9. These mistakes are easy to make but also easy to fix once you've identified it so don't worry too much if you make this error.
 
+**read_file.sh**
+```bash
+#!/bin/bash
+while IFS='' read -r line || [[ -n "$line" ]]; do
+    echo "Text read from file: $line"
+done < "$1"
+```
+
+<script src="https://gist.github.com/rugbyprof/3609aba7aa420451a53d9f735623f557.js"></script>
+
 ## Until Loops
 
 The until loop is fairly similar to the while loop. The difference is that it will execute the commands within it until the test becomes true.
@@ -1368,6 +1378,6 @@ echo Bye
 - `select do done`: Display a simple menu system for selecting items from a list.
 
 
-===================================================================================================================
+====================================================================================================
 
 Source: http://ryanstutorials.net/bash-scripting-tutorial/
