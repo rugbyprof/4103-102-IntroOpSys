@@ -51,7 +51,7 @@ You can get your work done however you want as long as your scripts end up:
 - ![][folder] /your4103repo
     - ![][folder] /assignments
         - ![][folder] /homework-01 
-            - ![][script] command_args.sh
+            - ![][script] sum_args.sh
             - ![][script] myrandom.sh
             - ![][script] versiona.sh
             - ![][script] versionb.sh
@@ -95,7 +95,7 @@ You can get your work done however you want as long as your scripts end up:
 - ![][folder] /your4103repo
     - ![][folder] /assignments
         - ![][folder] /homework-01 
-            - ![][script] command_args.sh
+            - ![][script] sum_args.sh
             - ![][script] myrandom.sh
             - ![][script] versiona.sh
             - ![][script] versionb.sh
