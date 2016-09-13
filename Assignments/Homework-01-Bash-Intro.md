@@ -134,6 +134,9 @@ You can get your work done however you want as long as your scripts end up:
 Random Word: micranthropos
 ```
 
+
+>**Note: Both scripts below assume your copying an existing file to one with the same contents, but a new name.**
+
 ### Script 3 
 
 - Create a script which will take a filename as its first argument and create a dated copy of the file. eg. if the file was named `file1.txt` it would create a copy such as `2016-01-28_file1.txt`. (To achieve this you will probably want to play with command substitution and the command date).
