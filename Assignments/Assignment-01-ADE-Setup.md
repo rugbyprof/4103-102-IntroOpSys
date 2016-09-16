@@ -143,7 +143,7 @@ a means to push your files to a central repository. So if your using a lab or pe
 - When you create a Github account, you must choose a `username`. 
 - This is very important to remember, because you will update the class roster with this username so I know where to find all your assignments.
 - Create a repository named:
-    - `4103-102-OpSys-yourlastname`
+    - `4103-101-OpSys-yourlastname`
     - replace the `yourlastname` with your last name to make it unique.
 - Check the box that says: "Add a README.md file"
 
@@ -271,13 +271,14 @@ $ sudo apt-get install git
 - Go to http://your.ip.address/ and see if the apache default page shows up.
 
 
+
 ### Step 7: Class Roster
 ---
 
 ![](https://d3vv6lp55qjaqc.cloudfront.net/items/2Y3p3e0B3t362M1Z020X/Apps-Google-Drive-Sheets-icon.png?X-CloudApp-Visitor-Id=1094421)
 #### Update the Class Roster:
 
-- Here is a link to our class roster on google docs: https://docs.google.com/spreadsheets/d/1AqdWI7sdDD9Vw6IFp_5Fhw0zB8N0duajwkSQ-epix5k/edit?usp=sharing
+- Here is a link to our class roster on google docs: https://docs.google.com/spreadsheets/d/1AQE5b4RNq93JC97D2d-xDs0QoE3dmYzqJVzct2YZdok/edit?usp=sharing
 
 - Update the roster by adding your information to it. 
 
@@ -286,7 +287,7 @@ Add:
 1. Your name (last, first)
 2. Your email
 3. Your github username<sup>*</sup>
-4. A link to your 4103-102-OpSys repository<sup>*</sup>
+4. A link to your 4103-101-OpSys repository<sup>*</sup>
 5. Ip address of your server
 
 *Your repository name and your github username are NOT the same thing.
@@ -298,7 +299,7 @@ Add:
 Every email must have a minimum of two items included:
 
 - The course number and title in the subject:
-    - `4103 102 OpSys`
+    - `4103 101 OpSys`
 - Your name
 
 I can't promise an answer if you don't provide those two pieces of information.
