@@ -668,8 +668,8 @@ class MyThread(threading.Thread):
 
 if __name__ == '__main__':
     for i in range(3):
-	t = MyThread(args=(i,), kwargs={'a':1, 'b':2})
-	t.start()
+        t = MyThread(args=(i,), kwargs={'a':1, 'b':2})
+        t.start()
 ```
 
 Output:
