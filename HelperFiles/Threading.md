@@ -1122,6 +1122,7 @@ First try : True
 Second try: 1
 ```
 
+http://stackoverflow.com/questions/22885775/what-is-the-difference-between-lock-and-rlock
 --------------------------------------------------------
 
 # Multithreading : Using locks in the with statement (Context Manager)
